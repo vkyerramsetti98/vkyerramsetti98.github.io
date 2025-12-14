@@ -469,7 +469,7 @@ p{margin:0 0 10px; line-height:1.65}
 
 /* Document cards */
 .doc-card{
-  border-radius: 16px;
+  border-radius: 8px;
   border: 1px solid rgba(15,23,42,.10);
   background: rgba(255,255,255,.70);
   box-shadow: 0 14px 30px rgba(2,6,23,.10);
