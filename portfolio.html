@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Academic Portfolio</title>
+  <title>Academic Portfolio – View Only</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <div class="brand">
-        <div class="brand-title">Academic Portfolio</div>
-        <div class="brand-subtitle">View-only embeds · Certificates · Project Reports</div>
+        <div class="brand-title">Vyshnavi Veeravalli</div>
+        <div class="brand-subtitle">Academic Portfolio</div>
       </div>
       <nav class="nav">
         <a class="nav-link" href="index.html">Home</a>
@@ -21,84 +21,189 @@
   </header>
 
   <main class="container">
-    <section class="hero compact">
-      <h1>Documents</h1>
-      <p class="muted">
-        If a document does not load, check the Google Drive sharing setting: “Anyone with the link → Viewer”.
-      </p>
+    <section class="hero">
+      <h1>Academic Portfolio</h1>
+      <p class="muted">Certificates, project reports, and academic documents in one place (minimal view mode).</p>
+
+      <div class="search-row">
+        <input id="q" class="search" type="search" placeholder="Search (e.g., SAP, ISO, LCA, DWSIM)..." />
+        <button class="tag active" data-filter="all">All</button>
+        <button class="tag" data-filter="cert">Certificates</button>
+        <button class="tag" data-filter="proj">Project Reports</button>
+        <button class="tag" data-filter="acad">Academic Docs</button>
+      </div>
+
       <div class="notice">
-        <strong>Usage:</strong> These materials are shared for evaluation only. Please do not redistribute.
+        <strong>Note:</strong> View-only reduces easy downloading, but copying cannot be fully prevented on the web.
       </div>
     </section>
 
+    <!-- Certificates -->
     <section class="card">
-      <h2>Certificates</h2>
-
-      <div class="doc">
-        <div class="doc-head">
-          <div class="doc-title">SAP EHS – Operational Sustainability (Certificate)</div>
-          <div class="doc-meta">PDF · Embedded preview</div>
-        </div>
-        <iframe
-          class="doc-frame"
-          src="https://drive.google.com/file/d/1D1FE-TUMWvQ6VsDtCCU2_EHX2rUofpMx/preview"
-          allow="autoplay">
-        </iframe>
+      <div class="section-head">
+        <h2 class="section-title">Certificates</h2>
+        <div class="section-sub">Add as many as you need</div>
       </div>
 
-      <div class="doc">
-        <div class="doc-head">
-          <div class="doc-title">ISO Standards Overview (Certificate)</div>
-          <div class="doc-meta">PDF · Embedded preview</div>
+      <div class="grid">
+        <!-- Replace FILE_ID -->
+        <div class="doc-card" data-type="cert" data-title="SAP EHS Certificate">
+          <div class="doc-title">SAP EHS – Operational Sustainability</div>
+          <div class="doc-meta">Certificate · PDF · View-only embed</div>
+          <div class="doc-actions">
+            <button class="btn btn-primary"
+              data-view-title="SAP EHS – Operational Sustainability"
+              data-src="https://drive.google.com/file/d/1D1FE-TUMWvQ6VsDtCCU2_EHX2rUofpMx/preview">
+              View
+            </button>
+          </div>
         </div>
-        <iframe
-          class="doc-frame"
-          src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview"
-          allow="autoplay">
-        </iframe>
+
+        <div class="doc-card" data-type="cert" data-title="ISO Standards Certificate">
+          <div class="doc-title">ISO 9001/14001/45001/50001 (Overview)</div>
+          <div class="doc-meta">Certificate · PDF · View-only embed</div>
+          <div class="doc-actions">
+            <button class="btn btn-primary"
+              data-view-title="ISO Standards (Overview)"
+              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
+              View
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Project Reports -->
     <section class="card">
-      <h2>Project Reports</h2>
-
-      <div class="doc">
-        <div class="doc-head">
-          <div class="doc-title">Project Report – Example Title</div>
-          <div class="doc-meta">PDF · Embedded preview</div>
-        </div>
-        <iframe
-          class="doc-frame"
-          src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview"
-          allow="autoplay">
-        </iframe>
+      <div class="section-head">
+        <h2 class="section-title">Project Reports</h2>
+        <div class="section-sub">Keep only the strongest + most relevant</div>
       </div>
 
-      <div class="doc">
-        <div class="doc-head">
-          <div class="doc-title">Project Report – Example Title 2</div>
-          <div class="doc-meta">PDF · Embedded preview</div>
+      <div class="grid">
+        <div class="doc-card" data-type="proj" data-title="LCA Hydrogen from Ammonia Report">
+          <div class="doc-title">LCA – Hydrogen Production from Ammonia</div>
+          <div class="doc-meta">Project report · PDF · Summary recommended</div>
+          <div class="doc-actions">
+            <button class="btn btn-primary"
+              data-view-title="LCA – Hydrogen Production from Ammonia"
+              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
+              View
+            </button>
+          </div>
         </div>
-        <iframe
-          class="doc-frame"
-          src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview"
-          allow="autoplay">
-        </iframe>
+
+        <div class="doc-card" data-type="proj" data-title="Aspen Simulation Report">
+          <div class="doc-title">Simulation Report (Aspen / DWSIM)</div>
+          <div class="doc-meta">Project report · PDF · View-only embed</div>
+          <div class="doc-actions">
+            <button class="btn btn-primary"
+              data-view-title="Simulation Report"
+              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
+              View
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Academic Docs -->
     <section class="card">
-      <h2>Optional: Add a “Request Full Copy”</h2>
-      <p class="muted">
-        If someone needs an official downloadable copy, you can provide it selectively by email.
-      </p>
+      <div class="section-head">
+        <h2 class="section-title">Academic Documents</h2>
+        <div class="section-sub">Transcripts, module summaries, etc. (share selectively)</div>
+      </div>
+
+      <div class="grid">
+        <div class="doc-card" data-type="acad" data-title="Transcript">
+          <div class="doc-title">Transcript / Grades (Selected)</div>
+          <div class="doc-meta">PDF · Consider redacting sensitive IDs</div>
+          <div class="doc-actions">
+            <button class="btn btn-primary"
+              data-view-title="Transcript (Selected)"
+              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <footer class="footer">
+      Tip: watermark every PDF page (Name · Year · “For review only”).
+    </footer>
   </main>
 
-  <footer class="footer">
-    <div class="container muted">
-      View-only embeds · Keep documents watermarked
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <div class="modal-bar">
+        <div id="modalTitle" class="modal-title">Document</div>
+        <button id="closeBtn" class="modal-close">Close</button>
+      </div>
+      <iframe id="modalFrame" class="modal-iframe" src=""></iframe>
     </div>
-  </footer>
+  </div>
+
+  <script>
+    const modal = document.getElementById('modal');
+    const modalFrame = document.getElementById('modalFrame');
+    const modalTitle = document.getElementById('modalTitle');
+    const closeBtn = document.getElementById('closeBtn');
+
+    function openModal(title, src){
+      modalTitle.textContent = title;
+      modalFrame.src = src;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+    }
+    function closeModal(){
+      modalFrame.src = '';
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+    }
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-src]');
+      if (btn) openModal(btn.dataset.viewTitle, btn.dataset.src);
+
+      if (e.target === modal) closeModal(); // click outside panel closes
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+    // Search + filter
+    const q = document.getElementById('q');
+    const tags = Array.from(document.querySelectorAll('.tag'));
+    const cards = Array.from(document.querySelectorAll('.doc-card'));
+    let currentFilter = 'all';
+
+    function apply(){
+      const needle = (q.value || '').trim().toLowerCase();
+      cards.forEach(c => {
+        const type = c.dataset.type;
+        const title = (c.dataset.title || '').toLowerCase() + ' ' + c.innerText.toLowerCase();
+        const okType = (currentFilter === 'all') || (type === currentFilter);
+        const okText = needle === '' || title.includes(needle);
+        c.style.display = (okType && okText) ? '' : 'none';
+      });
+    }
+
+    tags.forEach(t => {
+      t.addEventListener('click', () => {
+        tags.forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        const f = t.getAttribute('data-filter');
+        currentFilter = (f === 'cert' || f === 'proj' || f === 'acad') ? f : 'all';
+        apply();
+      });
+    });
+
+    q.addEventListener('input', apply);
+  </script>
 </body>
 </html>
+
