@@ -1,4 +1,4 @@
-<!--
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- Certificates -->
-  <!--  <section class="card">
+    <section class="card">
        <div class="section-bar cert"></div>
       <div class="section-head">
         <h2 class="section-title">Certificates</h2>
@@ -53,7 +53,7 @@
 
       <div class="grid">
         <!-- Replace FILE_ID -->
-    <!--    <div class="doc-card" data-type="cert" data-title="SAP EHS Certificate">
+        <div class="doc-card" data-type="cert" data-title="SAP EHS Certificate">
           <div class="doc-title">SAP EHS – Operational Sustainability</div>
           <div class="doc-meta">Certificate · PDF · View-only embed</div>
           <div class="doc-actions">
@@ -80,7 +80,7 @@
     </section>
 
     <!-- Project Reports -->
-<!--    <section class="card">
+   <section class="card">
       <div class="section-head">
         <h2 class="section-title">Project Reports</h2>
         <div class="section-sub"></div>
@@ -163,7 +163,7 @@
     </section>
 
     <!-- Academic Docs -->
-  <!--  <section class="card">
+   <section class="card">
       <div class="section-head">
         <h2 class="section-title">Academic Documents</h2>
         <div class="section-sub">Transcripts, module summaries, etc. (share selectively)</div>
@@ -190,7 +190,7 @@
   </main>
 
   <!-- Modal -->
-<!--  <div id="modal" class="modal" aria-hidden="true">
+  <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-panel" role="dialog" aria-modal="true">
       <div class="modal-bar">
         <div id="modalTitle" class="modal-title">Document</div>
@@ -257,210 +257,6 @@
       });
     });
 
-    q.addEventListener('input', apply);
-  </script>
-</body>
-</html>
--->
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio – View Only</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="bg-blob blob1"></div>
-  <div class="bg-blob blob2"></div>
-  <div class="bg-blob blob3"></div>
-
-  <header class="site-header">
-    <div class="container header-row">
-      <a class="logo" href="index.html" aria-label="Home">
-        <span class="logo-mark">VV</span>
-        <span class="logo-text">
-          <span class="logo-title">Academic Portfolio</span>
-          <span class="logo-subtitle">Minimal catalog · View-only</span>
-        </span>
-      </a>
-
-      <nav class="nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link active" href="portfolio.html">Portfolio</a>
-      </nav>
-
-      <a class="nav-cta" href="index.html#contact">Contact</a>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="catalog-hero">
-      <h1 class="catalog-title">Documents</h1>
-      <p class="catalog-sub">
-        Use search and section navigation. Click <strong>Open</strong> to view in a compact modal.
-      </p>
-
-      <div class="search-row">
-        <input id="q" class="search" type="search" placeholder="Search (SAP, ISO, LCA, Aspen, DWSIM)..." />
-      </div>
-
-      <div class="subnav">
-        <a class="subnav-link" href="#certificates">Certificates</a>
-        <a class="subnav-link" href="#projects">Project Reports</a>
-        <a class="subnav-link" href="#academic">Academic Docs</a>
-      </div>
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section id="certificates" class="card">
-      <div class="section-bar cert"></div>
-      <div class="section-head">
-        <h2 class="section-title">Certificates</h2>
-        <div class="section-sub">Short, focused, high-signal</div>
-      </div>
-
-      <div class="grid">
-        <div class="doc-card" data-type="cert" data-title="SAP EHS – Operational Sustainability">
-          <div class="doc-title">SAP EHS – Operational Sustainability</div>
-          <div class="doc-meta">Certificate · PDF · Embedded preview</div>
-
-          <div class="chip-row">
-            <button class="chip chip-open"
-              data-view-title="SAP EHS – Operational Sustainability"
-              data-src="https://drive.google.com/file/d/1D1FE-TUMWvQ6VsDtCCU2_EHX2rUofpMx/preview">
-              <span class="ico">↗</span> Open
-            </button>
-
-            <button class="chip chip-copy" data-copy="SAP EHS – Operational Sustainability">
-              <span class="ico">⧉</span> Copy title
-            </button>
-          </div>
-        </div>
-
-        <!-- duplicate doc-card blocks for more certificates -->
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="card">
-      <div class="section-bar proj"></div>
-      <div class="section-head">
-        <h2 class="section-title">Project Reports</h2>
-        <div class="section-sub">Prefer 2–5 best reports</div>
-      </div>
-
-      <div class="grid">
-        <div class="doc-card" data-type="proj" data-title="LCA – Hydrogen Production from Ammonia">
-          <div class="doc-title">LCA – Hydrogen Production from Ammonia</div>
-          <div class="doc-meta">Project report · PDF · (Consider a 1-page summary)</div>
-
-          <div class="chip-row">
-            <button class="chip chip-open"
-              data-view-title="LCA – Hydrogen Production from Ammonia"
-              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
-              <span class="ico">↗</span> Open
-            </button>
-
-            <button class="chip chip-copy" data-copy="LCA – Hydrogen Production from Ammonia">
-              <span class="ico">⧉</span> Copy title
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ACADEMIC -->
-    <section id="academic" class="card">
-      <div class="section-bar acad"></div>
-      <div class="section-head">
-        <h2 class="section-title">Academic Docs</h2>
-        <div class="section-sub">Share selectively; redact IDs</div>
-      </div>
-
-      <div class="grid">
-        <div class="doc-card" data-type="acad" data-title="Transcript (Selected)">
-          <div class="doc-title">Transcript (Selected)</div>
-          <div class="doc-meta">PDF · Ensure personal IDs are removed</div>
-
-          <div class="chip-row">
-            <button class="chip chip-open"
-              data-view-title="Transcript (Selected)"
-              data-src="https://drive.google.com/file/d/PASTE_FILE_ID_HERE/preview">
-              <span class="ico">↗</span> Open
-            </button>
-
-            <button class="chip chip-copy" data-copy="Transcript (Selected)">
-              <span class="ico">⧉</span> Copy title
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      Tip: watermark every page (Name · Year · For review only).
-    </footer>
-  </main>
-
-  <!-- Modal -->
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-panel" role="dialog" aria-modal="true">
-      <div class="modal-bar">
-        <div id="modalTitle" class="modal-title">Document</div>
-        <button id="closeBtn" class="modal-close">Close</button>
-      </div>
-      <iframe id="modalFrame" class="modal-iframe" src=""></iframe>
-    </div>
-  </div>
-
-  <script>
-    // Modal
-    const modal = document.getElementById('modal');
-    const modalFrame = document.getElementById('modalFrame');
-    const modalTitle = document.getElementById('modalTitle');
-    const closeBtn = document.getElementById('closeBtn');
-
-    function openModal(title, src){
-      modalTitle.textContent = title;
-      modalFrame.src = src;
-      modal.classList.add('open');
-      modal.setAttribute('aria-hidden','false');
-    }
-    function closeModal(){
-      modalFrame.src = '';
-      modal.classList.remove('open');
-      modal.setAttribute('aria-hidden','true');
-    }
-
-    document.addEventListener('click', (e) => {
-      const openBtn = e.target.closest('button[data-src]');
-      if (openBtn) openModal(openBtn.dataset.viewTitle, openBtn.dataset.src);
-
-      if (e.target === modal) closeModal();
-      const copyBtn = e.target.closest('button[data-copy]');
-      if (copyBtn){
-        navigator.clipboard.writeText(copyBtn.dataset.copy);
-        copyBtn.innerHTML = '<span class="ico">✓</span> Copied';
-        setTimeout(()=> copyBtn.innerHTML = '<span class="ico">⧉</span> Copy title', 1200);
-      }
-    });
-
-    closeBtn.addEventListener('click', closeModal);
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
-    });
-
-    // Search filter
-    const q = document.getElementById('q');
-    const cards = Array.from(document.querySelectorAll('.doc-card'));
-    function apply(){
-      const needle = (q.value || '').trim().toLowerCase();
-      cards.forEach(c => {
-        const hay = (c.dataset.title || '').toLowerCase() + ' ' + c.innerText.toLowerCase();
-        c.style.display = (needle === '' || hay.includes(needle)) ? '' : 'none';
-      });
-    }
     q.addEventListener('input', apply);
   </script>
 </body>
